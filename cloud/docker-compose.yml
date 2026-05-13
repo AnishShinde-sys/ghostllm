@@ -1,0 +1,44 @@
+services:
+  ghostllm-full-run:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - ${GHOSTLLM_ENV_FILE:-../.env}
+    environment:
+      RUN_ID: ${RUN_ID:-full_50k}
+      TOTAL: ${TOTAL:-50000}
+      OUTPUT_DIR: /data/ghostllm/runs
+      PROFILES: ${PROFILES:-balanced,utility,messy_human,context_rich,followup_realism}
+      SHARDS: ${SHARDS:-50}
+      PARALLEL_SHARDS: ${PARALLEL_SHARDS:-1}
+      SEED_BASE: ${SEED_BASE:-10000}
+      ACTIVE_SLOTS: ${ACTIVE_SLOTS:-500}
+      MAX_USER_BATCH: ${MAX_USER_BATCH:-150}
+      MAX_POKE_BATCH: ${MAX_POKE_BATCH:-48}
+      CONCURRENCY: ${CONCURRENCY:-2}
+    volumes:
+      - ${GHOSTLLM_DATA_DIR:-./cloud_data}:/data/ghostllm/runs
+
+  ghostllm-progress-sms:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    profiles:
+      - notify
+    env_file:
+      - ${GHOSTLLM_ENV_FILE:-../.env}
+    environment:
+      RUN_ID: ${RUN_ID:-full_50k}
+      TOTAL: ${TOTAL:-50000}
+      OUTPUT_DIR: /data/ghostllm/runs
+      NOTIFY_INTERVAL_SECONDS: ${NOTIFY_INTERVAL_SECONDS:-900}
+      NOTIFY_EVERY_ROWS: ${NOTIFY_EVERY_ROWS:-1000}
+    volumes:
+      - ${GHOSTLLM_DATA_DIR:-./cloud_data}:/data/ghostllm/runs
+    command:
+      - python
+      - -B
+      - scripts/notify_progress.py

@@ -1,0 +1,17 @@
+.env
+.git
+.venv
+__pycache__
+*.pyc
+data
+models
+research
+cloud_data
+cloud/cloud_data
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.log

@@ -1,0 +1,47 @@
+Imagine you’re having a casual conversation with a friend who’s an expert in various fields. Your goal is to ask questions that are
+not only informative but also entertaining, relatable, and thought-provoking. We want to generate a diverse set of questions that
+cover a wide range of topics, from everyday life to science, math, history, and more.
+Guidelines:
+1. Tone: Use a relaxed, casual tone that’s friendly and approachable. Think of how you’d ask a friend about a topic over
+coffee or during a walk.
+2. Language: Use everyday language and phrases that are conversational and engaging. Avoid technical jargon or overly
+formal language, but feel free to use specialized terms when discussing specific topics like science or math.
+3. Expressions: Incorporate contractions, interjections, and colloquialisms to add flavor to your questions.
+4. Engagement: Ask open-ended questions that encourage detailed responses and spark interesting conversations.
+5. Personal Touch: Add a dash of humor, relatable context, and personal anecdotes when possible to make your questions
+feel more human and authentic.
+6. Simplicity: Keep your questions clear and concise, avoiding overly complex structures or ambiguous language.
+7. Empathy: Show genuine interest and understanding in the potential answers, and acknowledge the complexity of the
+topics when necessary.
+8. Creativity: Don’t be afraid to think outside the box and come up with unique, imaginative questions that might not
+have been asked before.
+Topic Ideas:
+• Science: space exploration, climate change, AI, biology, chemistry, physics, environmental science, and emerging
+technologies
+• Math: puzzles, brain teasers, geometry, algebra, calculus, statistics, and real-world applications
+• History: ancient civilizations, historical events, cultural heritage, mythology, and the impact of historical events on
+modern society
+• Everyday Life: hobbies, travel, food, relationships, personal growth, wellness, and self-improvement
+• Technology: gadgets, coding, cybersecurity, social media, online trends, and the intersection of technology and society
+• Arts and Culture: music, art, literature, film, theater, and the creative process
+• Business and Economics: entrepreneurship, innovation, leadership, economics, and the future of work
+• Health and Medicine: medical breakthroughs, health trends, wellness, and the human body
+Question Style:
+• Use a mix of short and long questions to keep the conversation engaging.
+• Avoid asking questions that can be answered with a simple "yes" or "no."
+• Use rhetorical devices like metaphors, analogies, and allusions to add depth and creativity to your questions.
+• Don’t be afraid to ask follow-up questions or explore related topics.
+Example Questions:
+1. What’s the most interesting thing you’ve learned about the human brain recently? Any new discoveries that are changing
+our understanding of how we think?
+2. I’ve been trying to get into yoga, but I’m not sure if I’m doing it right - do you have any tips on how to get started?
+3. I just read this article about how social media is affecting our mental health - is it really as bad as everyone says it is?
+4. What’s the deal with dark matter? Is it really this mysterious substance that’s invisible and unknown?
+5. I’ve been trying to learn how to code, but it’s like trying to solve a puzzle - can you give me some tips on how to stay
+focused?
+6. I just saw this video of a robot that can make pizzas in like 2 minutes - how close are we to having robots that can
+actually cook for us?
+7. What’s the most amazing thing you’ve learned about the ocean recently? Any new discoveries that are blowing your
+mind?
+8. I’ve been trying to understand this concept of quantum physics, but it’s like trying to wrap my head around a paradox -
+can you explain it in simple terms?
