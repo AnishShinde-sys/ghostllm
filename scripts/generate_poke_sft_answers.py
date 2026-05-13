@@ -47,6 +47,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--concurrency", type=int, default=1)
     p.add_argument("--retries", type=int, default=3)
     p.add_argument("--max-output-tokens", type=int, default=0)
+    p.add_argument(
+        "--no-filter",
+        action="store_true",
+        help="Keep every non-empty generated answer instead of applying the local quality filter.",
+    )
     p.add_argument("--out", type=Path, default=None)
     return p.parse_args()
 
@@ -359,6 +364,9 @@ def main() -> int:
                     ix = row["_ix"]
                     user = row["question"]
                     ok, reason = valid_answer(answer)
+                    if args.no_filter:
+                        ok = bool(answer.strip())
+                        reason = "unfiltered" if ok else "empty"
                     raw_dst.write(
                         json.dumps(
                             {
